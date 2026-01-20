@@ -1,5 +1,7 @@
 {
-  "name": "Research Visualization",
-  "description": "Research paper reimagined as an elegant, interactive narrative site.",
+  "name": "EDUK8AGENTIC - AI Agent Training for Executives",
+  "description": "Executive AI training for non-technical leaders. Learn to leverage AI agents strategically without coding. The Leadership Multiplier for CEOs and C-suite executives.",
+  "keywords": ["AI agents", "executive training", "agentic AI", "leadership", "non-technical AI"],
+  "author": "EDUK8AGENTIC",
   "requestFramePermissions": []
 }
