@@ -5,7 +5,9 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './App';
+import { BlogIndex, CategoryPage, ArticlePage } from './components/blog/BlogPages';
 
 const rootElement = document.getElementById('root');
 if (!rootElement) {
@@ -15,6 +17,13 @@ if (!rootElement) {
 const root = ReactDOM.createRoot(rootElement);
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/blog" element={<BlogIndex />} />
+        <Route path="/blog/:categorySlug" element={<CategoryPage />} />
+        <Route path="/blog/:categorySlug/:articleSlug" element={<ArticlePage />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );

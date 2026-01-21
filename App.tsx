@@ -7,7 +7,7 @@
 import React, { useState, useEffect } from 'react';
 import { HeroScene } from './components/QuantumScene';
 import { ComparisonTable, PathCard, FeatureCard } from './components/LandingComponents';
-import { ArrowRight, CheckCircle2, Mail, Menu, X, ChevronRight, BrainCircuit, Rocket, Target, ShieldAlert } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Mail, Menu, X, ChevronRight, BrainCircuit, Rocket, Target, ShieldAlert, Quote, Star } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const App: React.FC = () => {
@@ -130,6 +130,141 @@ const App: React.FC = () => {
         </div>
       </header>
 
+      {/* Trusted By Section */}
+      <section className="py-16 bg-white border-b border-stone-100">
+        <div className="container mx-auto px-6">
+          <p className="text-center text-stone-400 uppercase tracking-[0.3em] text-xs font-bold mb-10">
+            Trusted by Leaders & Executives from
+          </p>
+
+          {/* Company Logos Carousel */}
+          <div className="relative overflow-hidden">
+            <div className="flex animate-scroll gap-16 items-center">
+              {[
+                { name: 'Deloitte', style: 'font-bold text-2xl' },
+                { name: 'KPMG', style: 'font-black text-2xl tracking-wider' },
+                { name: 'Barclays', style: 'font-bold text-2xl' },
+                { name: 'Unilever', style: 'font-bold text-2xl' },
+                { name: 'HSBC', style: 'font-black text-2xl tracking-wide' },
+                { name: 'Accenture', style: 'font-bold text-2xl' },
+                { name: 'PwC', style: 'font-black text-2xl' },
+                { name: 'Lloyds', style: 'font-bold text-2xl' },
+                { name: 'BP', style: 'font-black text-3xl' },
+                { name: 'Shell', style: 'font-bold text-2xl' },
+                { name: 'GSK', style: 'font-black text-2xl tracking-wider' },
+                { name: 'AstraZeneca', style: 'font-bold text-xl' },
+                // Duplicate for seamless loop
+                { name: 'Deloitte', style: 'font-bold text-2xl' },
+                { name: 'KPMG', style: 'font-black text-2xl tracking-wider' },
+                { name: 'Barclays', style: 'font-bold text-2xl' },
+                { name: 'Unilever', style: 'font-bold text-2xl' },
+                { name: 'HSBC', style: 'font-black text-2xl tracking-wide' },
+                { name: 'Accenture', style: 'font-bold text-2xl' },
+              ].map((company, i) => (
+                <span
+                  key={i}
+                  className={`${company.style} text-stone-300 hover:text-stone-500 transition-colors whitespace-nowrap`}
+                >
+                  {company.name}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-24 bg-gradient-to-b from-white to-purple-50">
+        <div className="container mx-auto px-6 max-w-6xl">
+          <div className="text-center mb-16">
+            <p className="text-purple-600 uppercase tracking-[0.2em] text-xs font-bold mb-4">What Leaders Are Saying</p>
+            <h2 className="font-serif text-4xl md:text-5xl text-stone-900">Transforming Executive Workflows</h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Testimonial 1 */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="bg-white p-8 rounded-2xl shadow-lg border border-stone-100 hover:shadow-xl transition-shadow"
+            >
+              <div className="flex gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} size={16} className="fill-yellow-400 text-yellow-400" />
+                ))}
+              </div>
+              <p className="text-stone-600 leading-relaxed mb-6 italic">
+                "The Agentic AI training completely transformed how I approach strategic decisions. I now have systems that monitor market shifts and prepare briefings before I even ask. It's like having a brilliant analyst working 24/7."
+              </p>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 font-bold text-lg">
+                  JM
+                </div>
+                <div>
+                  <p className="font-bold text-stone-900">James Mitchell</p>
+                  <p className="text-stone-500 text-sm">CEO, FinTech Solutions Ltd</p>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Testimonial 2 */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="bg-white p-8 rounded-2xl shadow-lg border border-stone-100 hover:shadow-xl transition-shadow md:transform md:-translate-y-4"
+            >
+              <div className="flex gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} size={16} className="fill-yellow-400 text-yellow-400" />
+                ))}
+              </div>
+              <p className="text-stone-600 leading-relaxed mb-6 italic">
+                "As a non-technical founder, I was sceptical about building AI systems. EDUK8AGENTIC made it accessible. Within weeks, I had autonomous agents handling competitor analysis and client research. Game-changing."
+              </p>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-600 font-bold text-lg">
+                  SP
+                </div>
+                <div>
+                  <p className="font-bold text-stone-900">Sarah Pemberton</p>
+                  <p className="text-stone-500 text-sm">Founder & MD, Pemberton Advisory</p>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Testimonial 3 */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+              className="bg-white p-8 rounded-2xl shadow-lg border border-stone-100 hover:shadow-xl transition-shadow"
+            >
+              <div className="flex gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} size={16} className="fill-yellow-400 text-yellow-400" />
+                ))}
+              </div>
+              <p className="text-stone-600 leading-relaxed mb-6 italic">
+                "We brought EDUK8AGENTIC in to train our senior leadership team. The ROI was immediate — our executives now understand AI at a strategic level and we've deployed three autonomous systems across the organisation."
+              </p>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold text-lg">
+                  RK
+                </div>
+                <div>
+                  <p className="font-bold text-stone-900">Richard Khalil</p>
+                  <p className="text-stone-500 text-sm">COO, Enterprise Holdings Group</p>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       <main>
         {/* The Problem Section */}
         <section id="problem" className="py-32 bg-white">
@@ -247,6 +382,134 @@ const App: React.FC = () => {
           </div>
         </section>
 
+        {/* Blog / Resources Section */}
+        <section id="blog" className="py-32 bg-stone-50">
+          <div className="container mx-auto px-6 max-w-6xl">
+            <div className="text-center mb-16">
+              <p className="text-purple-600 uppercase tracking-[0.2em] text-xs font-bold mb-4">Resources & Insights</p>
+              <h2 className="font-serif text-4xl md:text-5xl mb-4 text-stone-900">AI Leadership Insights</h2>
+              <p className="text-stone-500 text-lg max-w-2xl mx-auto">Practical guides for executives navigating the AI transformation</p>
+            </div>
+
+            {/* Featured Article - Full Width */}
+            <a href="/blog/executive-ai-training/ai-training-for-executives-complete-guide-2025" className="block mb-12">
+              <motion.article
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow group cursor-pointer md:flex"
+              >
+                <div className="md:w-1/2 h-64 md:h-auto bg-gradient-to-br from-purple-600 to-purple-800 flex items-center justify-center">
+                  <BrainCircuit size={96} className="text-white/80" />
+                </div>
+                <div className="md:w-1/2 p-8 flex flex-col justify-center">
+                  <p className="text-purple-600 text-xs font-bold uppercase tracking-wider mb-2">Featured • Executive AI Training</p>
+                  <h3 className="font-serif text-2xl md:text-3xl font-bold text-stone-900 mb-4 group-hover:text-purple-600 transition-colors">
+                    AI Training for Executives: The Complete Guide for Non-Technical Leaders in 2025
+                  </h3>
+                  <p className="text-stone-500 leading-relaxed mb-6">
+                    The definitive guide for CEOs, C-suite executives, and senior leaders who want to understand and leverage AI agents without technical expertise. Learn the strategic frameworks that separate AI-literate leaders from those falling behind.
+                  </p>
+                  <div className="flex items-center gap-4 text-sm text-stone-400 mb-4">
+                    <span>18 min read</span>
+                    <span>•</span>
+                    <span>21 Jan 2025</span>
+                  </div>
+                  <div className="flex items-center text-purple-600 font-semibold">
+                    Read Full Article <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </div>
+              </motion.article>
+            </a>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Article 1 */}
+              <motion.article
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow group cursor-pointer"
+              >
+                <div className="h-48 bg-gradient-to-br from-stone-700 to-stone-900 flex items-center justify-center">
+                  <BrainCircuit size={64} className="text-white/80" />
+                </div>
+                <div className="p-6">
+                  <p className="text-stone-600 text-xs font-bold uppercase tracking-wider mb-2">Coming Soon</p>
+                  <h3 className="font-serif text-xl font-bold text-stone-900 mb-3">
+                    What Are AI Agents? A Non-Technical Executive's Guide
+                  </h3>
+                  <p className="text-stone-500 text-sm leading-relaxed mb-4">
+                    Understand AI agents without the jargon. Learn how autonomous AI systems differ from chatbots and why they matter for business leadership.
+                  </p>
+                  <div className="flex items-center text-stone-400 font-semibold text-sm">
+                    Coming Soon
+                  </div>
+                </div>
+              </motion.article>
+
+              {/* Article 2 */}
+              <motion.article
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.1 }}
+                className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow group cursor-pointer"
+              >
+                <div className="h-48 bg-gradient-to-br from-stone-700 to-stone-900 flex items-center justify-center">
+                  <Rocket size={64} className="text-white/80" />
+                </div>
+                <div className="p-6">
+                  <p className="text-stone-600 text-xs font-bold uppercase tracking-wider mb-2">Coming Soon</p>
+                  <h3 className="font-serif text-xl font-bold text-stone-900 mb-3">
+                    How to Build AI Agents Without Coding: CEO's Playbook
+                  </h3>
+                  <p className="text-stone-500 text-sm leading-relaxed mb-4">
+                    A step-by-step framework for non-technical leaders to deploy AI agents. No programming required — just strategic thinking.
+                  </p>
+                  <div className="flex items-center text-stone-400 font-semibold text-sm">
+                    Coming Soon
+                  </div>
+                </div>
+              </motion.article>
+
+              {/* Article 3 */}
+              <motion.article
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.2 }}
+                className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow group cursor-pointer"
+              >
+                <div className="h-48 bg-gradient-to-br from-stone-700 to-stone-900 flex items-center justify-center">
+                  <Target size={64} className="text-white/80" />
+                </div>
+                <div className="p-6">
+                  <p className="text-stone-600 text-xs font-bold uppercase tracking-wider mb-2">Coming Soon</p>
+                  <h3 className="font-serif text-xl font-bold text-stone-900 mb-3">
+                    AI Strategy for Business Leaders: ROI Framework
+                  </h3>
+                  <p className="text-stone-500 text-sm leading-relaxed mb-4">
+                    How to evaluate AI investments and measure returns. Strategic frameworks for executive decision-making in AI transformation.
+                  </p>
+                  <div className="flex items-center text-stone-400 font-semibold text-sm">
+                    Coming Soon
+                  </div>
+                </div>
+              </motion.article>
+            </div>
+
+            {/* View All Blog CTA */}
+            <div className="mt-12 text-center">
+              <a
+                href="/blog"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-purple-600 text-white rounded-full font-bold hover:bg-purple-700 transition-colors"
+              >
+                View All Articles <ArrowRight size={18} />
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* Transformation Table */}
         <section className="py-32 bg-white border-t border-stone-100">
            <div className="container mx-auto px-6 max-w-5xl">
@@ -275,9 +538,9 @@ const App: React.FC = () => {
             </div>
             
             <div className="mt-20 flex flex-col items-center gap-4 text-stone-400">
-                <p className="font-bold text-stone-900 uppercase tracking-tight">www.educ8agentic.com</p>
-                <p className="text-sm">Agentic Practical Education for Non-Technical Executives & Leaders</p>
-                <p className="text-[10px] mt-4 opacity-50 uppercase tracking-tighter">SEO & LLM Optimized Context Provider</p>
+                <p className="font-bold text-stone-900 uppercase tracking-tight">www.eduk8agentic.com</p>
+                <p className="text-sm">Agentic AI Education for Non-Technical Executives & Leaders</p>
+                <p className="text-xs mt-4">© 2025 EDUK8AGENTIC. All rights reserved.</p>
             </div>
         </div>
       </footer>
