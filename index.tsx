@@ -8,6 +8,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './App';
 import { BlogIndex, CategoryPage, ArticlePage } from './components/blog/BlogPages';
+import AIAgentAudit from './components/AIAgentAudit';
 
 const rootElement = document.getElementById('root');
 if (!rootElement) {
@@ -20,6 +21,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
+        <Route path="/audit" element={<AIAgentAudit />} />
         <Route path="/blog" element={<BlogIndex />} />
         <Route path="/blog/:categorySlug" element={<CategoryPage />} />
         <Route path="/blog/:categorySlug/:articleSlug" element={<ArticlePage />} />
