@@ -1867,7 +1867,8 @@ export const articles: Article[] = [
   </div>
 </article>
 `
-  },
+  }
+,
   {
     slug: 'why-non-technical-executives-building-ai-agent-teams',
     title: 'Why Non-Technical Executives Are Building AI Agent Teams (And How You Can Too)',
@@ -1881,7 +1882,7 @@ export const articles: Article[] = [
     readTime: '7 min read',
     featuredImage: '/images/blog/2026-01-26-hero-ai-agent-team.png',
     tags: ['AI agents', 'no-code AI', 'executive training', 'AI teams', 'agentic AI', 'business automation', 'AI implementation'],
-    content: \`
+    content: `
 <article class="prose prose-lg max-w-none">
   <img src="/images/blog/2026-01-26-hero-ai-agent-team.png" alt="Executive using AI automation workflows" class="w-full rounded-xl mb-8" />
   
@@ -1896,8 +1897,6 @@ export const articles: Article[] = [
   <p>AI stopped being a tool you use and became a system that works alongside you.</p>
 
   <p>The executives who noticed? They're not waiting for IT to figure it out. They're building AI agent teams themselves. No coding. No technical background. Just a clear understanding of what needs to get done.</p>
-
-  <p>If that sounds impossible, keep reading.</p>
 
   <h2 id="wrong-about-ai" class="text-3xl font-serif font-bold mt-12 mb-6">What Most People Get Wrong About AI</h2>
 
@@ -1919,139 +1918,67 @@ export const articles: Article[] = [
 
   <p>AI agents don't wait. You give them a goal, and they figure out how to achieve it. They research. They draft. They follow up. They iterate. They work through multi-step processes without you hovering over them.</p>
 
-  <p>The difference isn't subtle. It's the difference between having a search engine and having a team.</p>
-
   <h2 id="agent-team" class="text-3xl font-serif font-bold mt-12 mb-6">What an AI Agent Team Actually Looks Like</h2>
-
-  <p>Let's make this concrete.</p>
 
   <img src="/images/blog/2026-01-26-ai-agent-team-diagram.png" alt="AI Agent Team Collaboration Diagram" class="w-full rounded-xl my-8" />
 
   <p>A typical AI agent team for a consulting firm might include:</p>
 
   <div class="bg-stone-50 p-6 rounded-xl my-8">
-    <p><strong>Research Agent</strong><br/>Monitors industry news, competitor moves, and market trends. Compiles briefings. Flags what matters.</p>
+    <p><strong>Research Agent</strong> - Monitors industry news, competitor moves, and market trends. Compiles briefings. Flags what matters.</p>
   </div>
 
   <div class="bg-stone-50 p-6 rounded-xl my-8">
-    <p><strong>Content Agent</strong><br/>Drafts blog posts, LinkedIn updates, and thought leadership pieces based on your voice and positioning.</p>
+    <p><strong>Content Agent</strong> - Drafts blog posts, LinkedIn updates, and thought leadership pieces based on your voice and positioning.</p>
   </div>
 
   <div class="bg-stone-50 p-6 rounded-xl my-8">
-    <p><strong>Outreach Agent</strong><br/>Personalizes prospect emails based on their recent activity, company news, and role. Handles follow-up sequences.</p>
+    <p><strong>Outreach Agent</strong> - Personalizes prospect emails based on their recent activity, company news, and role. Handles follow-up sequences.</p>
   </div>
 
   <div class="bg-stone-50 p-6 rounded-xl my-8">
-    <p><strong>Operations Agent</strong><br/>Processes incoming requests, routes them appropriately, updates CRMs, and maintains documentation.</p>
+    <p><strong>Operations Agent</strong> - Processes incoming requests, routes them appropriately, updates CRMs, and maintains documentation.</p>
   </div>
 
   <p>Each agent handles one domain. Together, they multiply what a small team can accomplish.</p>
 
-  <p>This isn't theoretical. Executives are deploying these systems today.</p>
-
   <h2 id="advantage" class="text-3xl font-serif font-bold mt-12 mb-6">Why Non-Technical Leaders Have the Advantage</h2>
-
-  <p>Here's something the tech world doesn't want to admit:</p>
 
   <p><strong>The best AI agent builders aren't engineers. They're operators.</strong></p>
 
   <p>Why? Because building effective AI agents is 20% technical and 80% understanding the problem you're solving.</p>
 
-  <p>Engineers think in systems and code. Executives think in outcomes and workflows. AI agents need both, but the workflow thinking is harder to teach.</p>
-
-  <p>If you know:</p>
-  <ul class="list-disc pl-6 space-y-2 my-6">
-    <li>What good output looks like</li>
-    <li>Where the bottlenecks are in your process</li>
-    <li>What decisions can be made with clear criteria</li>
-  </ul>
-
-  <p>Then you already have what it takes to design an AI agent.</p>
-
-  <p>The technical part? That's what no-code tools are for.</p>
+  <p>If you know what good output looks like, where the bottlenecks are, and what decisions can be made with clear criteria, you already have what it takes to design an AI agent.</p>
 
   <h2 id="no-code-stack" class="text-3xl font-serif font-bold mt-12 mb-6">The No-Code Agent Building Stack</h2>
 
-  <p>You don't need to code to build AI agents. Here's what the stack looks like today:</p>
+  <p>You don't need to code to build AI agents:</p>
 
   <div class="bg-purple-50 border-l-4 border-purple-600 p-6 my-8 rounded-r-lg">
     <p class="font-semibold text-purple-900 mb-2">For Simple Agents:</p>
-    <ul class="text-purple-800 list-disc pl-6">
-      <li>Zapier with AI integrations</li>
-      <li>Make (formerly Integromat)</li>
-      <li>Microsoft Power Automate with Copilot</li>
-    </ul>
+    <p class="text-purple-800">Zapier with AI, Make (Integromat), Microsoft Power Automate with Copilot</p>
   </div>
 
   <div class="bg-purple-50 border-l-4 border-purple-600 p-6 my-8 rounded-r-lg">
     <p class="font-semibold text-purple-900 mb-2">For Sophisticated Agents:</p>
-    <ul class="text-purple-800 list-disc pl-6">
-      <li>Relevance AI</li>
-      <li>n8n with AI nodes</li>
-      <li>Flowise</li>
-    </ul>
+    <p class="text-purple-800">Relevance AI, n8n with AI nodes, Flowise</p>
   </div>
 
-  <p>The learning curve is weeks, not years. Most executives can have their first agent running within days.</p>
+  <h2 id="framework" class="text-3xl font-serif font-bold mt-12 mb-6">Five-Step Framework for Your First AI Agent</h2>
 
-  <h2 id="framework" class="text-3xl font-serif font-bold mt-12 mb-6">The Five-Step Framework for Your First AI Agent</h2>
-
-  <p>Ready to build? Here's how to start:</p>
-
-  <h3 class="text-2xl font-bold mt-8 mb-4">Step 1: Pick One Repeatable Task</h3>
-  <p>Don't try to automate your whole business. Pick one task that:</p>
-  <ul class="list-disc pl-6 space-y-2 my-6">
-    <li>You do frequently (at least weekly)</li>
-    <li>Follows a predictable pattern</li>
-    <li>Has clear inputs and outputs</li>
-  </ul>
-  <p>Examples: Research briefs, meeting prep, content drafts, data summaries, follow-up emails.</p>
-
-  <h3 class="text-2xl font-bold mt-8 mb-4">Step 2: Document the Process</h3>
-  <p>Write down exactly how YOU do this task. Every step. Every decision point. Every source you check.</p>
-  <p>This becomes the blueprint for your agent.</p>
-
-  <h3 class="text-2xl font-bold mt-8 mb-4">Step 3: Choose Your Tool</h3>
-  <p>For your first agent, start simple. Relevance AI or n8n are good starting points. They have templates you can modify.</p>
-
-  <h3 class="text-2xl font-bold mt-8 mb-4">Step 4: Build the Minimum Version</h3>
-  <p>Don't try to make it perfect. Build a version that handles 80% of cases. You can refine later.</p>
-
-  <h3 class="text-2xl font-bold mt-8 mb-4">Step 5: Run It Alongside Your Current Process</h3>
-  <p>Don't hand over the task completely on day one. Let the agent run in parallel. Review its output. Catch its mistakes. Train it through feedback.</p>
-  <p>Within 2-4 weeks, you'll have an agent that handles the task reliably.</p>
-
-  <h2 id="what-changes" class="text-3xl font-serif font-bold mt-12 mb-6">What Changes When You Have an AI Agent Team</h2>
-
-  <p>The executives I work with report the same pattern:</p>
-
-  <ul class="list-disc pl-6 space-y-2 my-6">
-    <li><strong>Week 1-2:</strong> Skepticism. "This can't actually work."</li>
-    <li><strong>Week 3-4:</strong> Surprise. "It's doing better than I expected."</li>
-    <li><strong>Month 2:</strong> Dependency. "I can't imagine going back."</li>
-    <li><strong>Month 3:</strong> Expansion. "What else can we build?"</li>
-  </ul>
-
-  <p>The shift isn't just about efficiency. It's about what becomes possible when routine work handles itself.</p>
-
-  <p>Strategic thinking gets more time. Client relationships get more attention. Growth initiatives actually happen.</p>
-
-  <p>You're not doing less. You're doing different.</p>
+  <ol class="list-decimal pl-6 space-y-4 my-6">
+    <li><strong>Pick One Repeatable Task</strong> - Something you do weekly, follows a pattern, has clear inputs and outputs.</li>
+    <li><strong>Document the Process</strong> - Write down every step, decision point, and source you check.</li>
+    <li><strong>Choose Your Tool</strong> - Start with Relevance AI or n8n. They have templates.</li>
+    <li><strong>Build the Minimum Version</strong> - Handle 80% of cases first. Refine later.</li>
+    <li><strong>Run It In Parallel</strong> - Let it work alongside your current process. Review, catch mistakes, train through feedback.</li>
+  </ol>
 
   <h2 id="start-now" class="text-3xl font-serif font-bold mt-12 mb-6">Start This Week</h2>
 
-  <p>Here's your homework:</p>
-
-  <ol class="list-decimal pl-6 space-y-2 my-6">
-    <li><strong>Identify one task</strong> that takes you more than 2 hours per week and follows a repeatable pattern.</li>
-    <li><strong>Document the process</strong> in detail. Every step, every decision, every source.</li>
-    <li><strong>Sign up for Relevance AI or n8n</strong> (both have free tiers).</li>
-    <li><strong>Build a simple version</strong> using their templates as a starting point.</li>
-  </ol>
+  <p>Identify one task that takes more than 2 hours per week. Document it. Sign up for a free tier tool. Build a simple version.</p>
 
   <p>You'll learn more in one afternoon of building than in months of reading about AI.</p>
-
-  <p>And if you want guidance? That's exactly what we do at EDUK8AGENTIC.</p>
 
   <hr class="my-12 border-stone-200" />
 
@@ -2060,11 +1987,10 @@ export const articles: Article[] = [
     <ul class="space-y-2">
       <li><a href="/blog/ai-agents-explained/what-are-ai-agents-executive-guide" class="text-purple-600 hover:text-purple-800 underline">What Are AI Agents? The Non-Technical Executive's Guide</a></li>
       <li><a href="/blog/ai-implementation/build-ai-agents-without-coding" class="text-purple-600 hover:text-purple-800 underline">How to Build AI Agents Without Coding</a></li>
-      <li><a href="/blog/ai-agents-explained/agentic-ai-vs-chatbots" class="text-purple-600 hover:text-purple-800 underline">Agentic AI vs Chatbots: Why the Distinction Matters</a></li>
     </ul>
   </div>
 </article>
-\`
+`
   }
 ];
 
