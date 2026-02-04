@@ -1,11 +1,7 @@
 {
+  "cleanUrls": true,
+  "trailingSlash": false,
   "headers": [
-    {
-      "source": "/index.html",
-      "headers": [
-        { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" }
-      ]
-    },
     {
       "source": "/(.*)",
       "headers": [
@@ -14,8 +10,7 @@
     }
   ],
   "rewrites": [
-    { "source": "/research/:path*", "destination": "/research/:path*" },
-    { "source": "/images/:path*", "destination": "/images/:path*" },
-    { "source": "/((?!research|images).*)", "destination": "/index.html" }
+    { "source": "/research/(.*)", "destination": "/research/$1" },
+    { "source": "/((?!research|images|assets|favicon|robots|sitemap).*)", "destination": "/index.html" }
   ]
 }
