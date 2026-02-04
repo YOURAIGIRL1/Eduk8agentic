@@ -1,16 +1,4 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false,
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
-      ]
-    }
-  ],
-  "rewrites": [
-    { "source": "/research/(.*)", "destination": "/research/$1" },
-    { "source": "/((?!research|images|assets|favicon|robots|sitemap).*)", "destination": "/index.html" }
-  ]
+  "trailingSlash": false
 }
