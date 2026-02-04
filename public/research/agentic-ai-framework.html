@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free White Paper: Agentic AI for Non-Technical Leaders | Eduk8agentic</title>
+  <meta name="description" content="Download the free framework for executives to understand, evaluate, and implement agentic AI - no technical background required.">
+  <link rel="canonical" href="https://eduk8agentic.com/research/agentic-ai-framework">
+  
+  <meta property="og:title" content="Agentic AI for Non-Technical Leaders - Free White Paper">
+  <meta property="og:description" content="A practical framework for executive decision-making. Download free.">
+  <meta property="og:type" content="article">
+  
+  <style>
+    :root {
+      --primary: #6366f1;
+      --primary-dark: #4f46e5;
+      --dark: #1e1b4b;
+      --light: #f8fafc;
+      --gray: #64748b;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      line-height: 1.7;
+      color: var(--dark);
+      background: var(--light);
+    }
+    
+    .header {
+      background: var(--dark);
+      padding: 15px 20px;
+    }
+    
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      color: white;
+      font-weight: 700;
+      font-size: 1.3em;
+      text-decoration: none;
+    }
+    
+    .logo span { color: var(--primary); }
+    
+    .hero {
+      background: linear-gradient(135deg, var(--dark) 0%, #312e81 100%);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    
+    .hero-inner {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .badge {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    
+    h1 {
+      font-size: 2.5em;
+      font-weight: 800;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+    
+    .subtitle {
+      font-size: 1.2em;
+      opacity: 0.9;
+      margin-bottom: 30px;
+    }
+    
+    .main {
+      max-width: 1100px;
+      margin: -60px auto 60px;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 1fr 400px;
+      gap: 40px;
+    }
+    
+    @media (max-width: 900px) {
+      .main { grid-template-columns: 1fr; }
+      h1 { font-size: 1.8em; }
+    }
+    
+    .content-card {
+      background: white;
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    }
+    
+    .form-card {
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+      height: fit-content;
+      position: sticky;
+      top: 20px;
+    }
+    
+    .form-card h3 {
+      font-size: 1.3em;
+      margin-bottom: 5px;
+    }
+    
+    .form-card .price {
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+    
+    .form-group {
+      margin-bottom: 15px;
+    }
+    
+    .form-group label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 5px;
+      font-size: 0.9em;
+    }
+    
+    .form-group input {
+      width: 100%;
+      padding: 12px 15px;
+      border: 2px solid #e2e8f0;
+      border-radius: 8px;
+      font-size: 1em;
+      transition: border-color 0.2s;
+    }
+    
+    .form-group input:focus {
+      outline: none;
+      border-color: var(--primary);
+    }
+    
+    .submit-btn {
+      width: 100%;
+      padding: 15px;
+      background: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1em;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    
+    .submit-btn:hover {
+      background: var(--primary-dark);
+    }
+    
+    .trust {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 0.85em;
+      color: var(--gray);
+    }
+    
+    h2 {
+      font-size: 1.4em;
+      margin: 30px 0 15px;
+      color: var(--dark);
+    }
+    
+    h2:first-child { margin-top: 0; }
+    
+    p { margin-bottom: 15px; color: #475569; }
+    
+    ul {
+      margin: 15px 0 15px 20px;
+    }
+    
+    li {
+      margin-bottom: 10px;
+      color: #475569;
+    }
+    
+    .highlight {
+      background: #f1f5f9;
+      border-left: 4px solid var(--primary);
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    .author-box {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      margin-top: 30px;
+      padding-top: 30px;
+      border-top: 1px solid #e2e8f0;
+    }
+    
+    .author-img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    
+    .author-info h4 { margin-bottom: 5px; }
+    .author-info p { margin: 0; font-size: 0.9em; }
+    
+    .toc {
+      background: #f8fafc;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+    
+    .toc h4 {
+      margin-bottom: 10px;
+      font-size: 0.9em;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--gray);
+    }
+    
+    .toc ol {
+      margin: 0;
+      padding-left: 20px;
+    }
+    
+    .toc li {
+      margin-bottom: 5px;
+      font-size: 0.95em;
+    }
+    
+    .footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    
+    .footer p { color: rgba(255,255,255,0.7); margin: 0; }
+    
+    .success-message {
+      display: none;
+      text-align: center;
+      padding: 30px;
+    }
+    
+    .success-message h3 {
+      color: #10b981;
+      margin-bottom: 15px;
+    }
+  </style>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">Eduk8<span>agentic</span></a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="badge">📄 FREE WHITE PAPER</span>
+      <h1>Agentic AI for Non-Technical Leaders</h1>
+      <p class="subtitle">A Practical Framework for Executive Decision-Making</p>
+    </div>
+  </section>
+
+  <main class="main">
+    <div class="content-card">
+      <div class="toc">
+        <h4>What's Inside</h4>
+        <ol>
+          <li>Understanding Agentic AI (Without the Jargon)</li>
+          <li>The Five-Stage Adoption Model</li>
+          <li>Executive Readiness Framework</li>
+          <li>Governance & Risk Management</li>
+          <li>Measuring ROI</li>
+          <li>Actionable Next Steps</li>
+        </ol>
+      </div>
+      
+      <h2>Why This Paper?</h2>
+      <p>73% of business leaders feel unprepared for the agentic AI transition. If you're one of them, you're not alone - and this paper is for you.</p>
+      
+      <p>While countless resources exist for AI engineers, <strong>executives tasked with strategic AI decisions lack frameworks suited to their perspective.</strong> Technical documentation doesn't answer the questions you actually need answered.</p>
+      
+      <div class="highlight">
+        <strong>This paper answers:</strong>
+        <ul style="margin-bottom: 0;">
+          <li>What can agentic AI actually do (and what can't it do)?</li>
+          <li>How do I know if my organization is ready?</li>
+          <li>Where should we deploy AI agents first?</li>
+          <li>How do we measure return on investment?</li>
+          <li>How do we govern autonomous systems responsibly?</li>
+        </ul>
+      </div>
+      
+      <h2>Who Is This For?</h2>
+      <ul>
+        <li><strong>CEOs and Founders</strong> evaluating AI for competitive advantage</li>
+        <li><strong>COOs and Operations Leaders</strong> looking to automate workflows</li>
+        <li><strong>Non-technical executives</strong> who need to make AI decisions without an engineering background</li>
+        <li><strong>Board members</strong> overseeing AI governance</li>
+        <li><strong>Consultants and advisors</strong> helping clients with AI strategy</li>
+      </ul>
+      
+      <h2>What You'll Learn</h2>
+      <p><strong>The Five Capabilities of Agentic AI</strong> - Understand what makes agents different from chatbots and traditional automation.</p>
+      
+      <p><strong>The Executive Readiness Framework</strong> - Assess your organization across 5 dimensions before investing in AI agents.</p>
+      
+      <p><strong>The Five-Stage Adoption Model</strong> - A systematic approach from education to embedding AI as a core capability.</p>
+      
+      <p><strong>Governance Essentials</strong> - How to maintain accountability when AI makes autonomous decisions.</p>
+      
+      <p><strong>ROI Measurement</strong> - Concrete metrics and a sample calculation to justify investment.</p>
+      
+      <div class="author-box">
+        <img src="/images/zara-hunter.png" alt="Zara Hunter" class="author-img" onerror="this.style.display='none'">
+        <div class="author-info">
+          <h4>Zara Hunter</h4>
+          <p>Founder, Eduk8agentic<br>AI Education & Consulting</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="form-card">
+      <div id="form-container">
+        <h3>Download Free</h3>
+        <p class="price">$0 <span style="font-size: 0.5em; color: #64748b; font-weight: 400;">(Value: $49)</span></p>
+        
+        <form id="download-form">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required placeholder="Your name">
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Work Email *</label>
+            <input type="email" id="email" name="email" required placeholder="you@company.com">
+          </div>
+          
+          <div class="form-group">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" placeholder="Your company">
+          </div>
+          
+          <div class="form-group">
+            <label for="role">Your Role</label>
+            <input type="text" id="role" name="role" placeholder="e.g. CEO, Operations Director">
+          </div>
+          
+          <button type="submit" class="submit-btn">Download White Paper →</button>
+          
+          <p class="trust">🔒 No spam. Unsubscribe anytime.</p>
+        </form>
+      </div>
+      
+      <div class="success-message" id="success-message">
+        <h3>✅ Check Your Email!</h3>
+        <p>The white paper is on its way to your inbox.</p>
+        <p style="margin-top: 20px;"><a href="/research/agentic-ai-whitepaper.html" style="color: var(--primary); font-weight: 600;">Or read it online now →</a></p>
+      </div>
+    </div>
+  </main>
+  
+  <footer class="footer">
+    <p>© 2026 Eduk8agentic. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('download-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const formData = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        company: document.getElementById('company').value,
+        role: document.getElementById('role').value,
+        source: 'whitepaper_agentic_ai_framework',
+        timestamp: new Date().toISOString()
+      };
+      
+      // Store in localStorage for now (can connect to CRM later)
+      const leads = JSON.parse(localStorage.getItem('whitepaper_leads') || '[]');
+      leads.push(formData);
+      localStorage.setItem('whitepaper_leads', JSON.stringify(leads));
+      
+      // Show success and redirect to paper
+      document.getElementById('form-container').style.display = 'none';
+      document.getElementById('success-message').style.display = 'block';
+      
+      // Auto-redirect after 2 seconds
+      setTimeout(function() {
+        window.location.href = '/research/agentic-ai-whitepaper.html';
+      }, 2000);
+    });
+  </script>
+</body>
+</html>
